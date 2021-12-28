@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<div class=" loader-div">
+  <div class="loader">Loading...</div>
+</div>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Portfolio Web</title>
+
+  <style>
+    .loader-div{
+      position: fixed;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000000000;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .loader,
+    .loader:before,
+    .loader:after {
+      background: #000;
+      -webkit-animation: load1 1s infinite ease-in-out;
+      animation: load1 1s infinite ease-in-out;
+      width: 1em;
+      height: 4em;
+    }
+    .loader {
+      color: #000;
+      text-indent: -9999em;
+      margin: 88px auto;
+      position: relative;
+      font-size: 11px;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+    .loader:before,
+    .loader:after {
+      position: absolute;
+      top: 0;
+      content: '';
+    }
+    .loader:before {
+      left: -1.5em;
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    .loader:after {
+      left: 1.5em;
+    }
+    @-webkit-keyframes load1 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 0;
+        height: 4em;
+      }
+      40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+      }
+    }
+    @keyframes load1 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 0;
+        height: 4em;
+      }
+      40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+      }
+    }
+  </style>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- bs link -->
+  <link rel="stylesheet" href="bootstrap 5.1/node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- feather link -->
+  <link rel="stylesheet" href="feather/feather-icons-web/feather.css">
+
+  <!-- animate css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body>
+  <!-- header start -->
+  <div class=" container-fluid navvv">
+    <div class="row">
+      <div class="cotainer">
+        <div class=" row">
+          <div class=" col-12 wow animate__slideInLeft ani-nav">
+            <nav class="navbar navbar-expand-lg  " aria-label="Ninth navbar example">
+                <h2 class="nav-title">4RK4R</h2>
+                <div class=" d-md-none">
+                  <div class="menu-btn">
+                    <i class=" feather-menu btn me-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"></i>
+                  </div>
+                </div>
+                <div class="collapse navbar-collapse align-items-center justify-content-end ul-d" id="navbarsExample07XL">
+                  <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item normal">
+                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item normal">
+                      <a class="nav-link" href="#bio">About</a>
+                    </li>
+                    <li class="nav-item normal">
+                      <a class="nav-link" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item normal">
+                      <a class="nav-link" href="#ser">Services</a>                      
+                    </li>
+                    <li class="nav-item normal">
+                      <a class="nav-link" href="#pj">Projects</a>
+                    </li>
+                    <li class="nav-item normal">
+                      <a class="nav-link" href="#co">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header end -->
+  <!-- home start -->
+  <section class=" container-fluid home-cott" id="home">
+    <div class=" row">
+      <div class=" cotainer">
+        <div class=" row row-home align-items-center">
+          <div class=" col-12 col-md-6">
+            <div class="home-left wow animate__fadeInLeft ani-home-l">
+              <h4 class="one-h1">Hello I'm</h4><br><br>
+              <h1><span class="auto-input"></span></h1>
+              <span class="two"></span>
+              <div class=" d-flex">
+                <ul class=" cot-ul">
+                  <li><a href="#"><i class=" feather-facebook"></i></a></li>
+                  <li><a href="#"><i class=" feather-twitter"></i></a></li>
+                  <li><a href="#"><i class=" feather-instagram"></i></a></li>
+                  <li><a href="#"><i class=" feather-message-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-md-6 ">
+            <div class=" home-img wow animate__fadeInRight ani-home-r"> 
+              <img src="image/mi.png" alt="" class="pf-img">
+            </div>
+          </div>
+        </div>
+        <div class=" mouse">
+          <a href="#bio"><img src="image/mouse.png" class="mouse-png animate__animated animate__bounce ani-mouse" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home end -->
+  <!-- about start -->
+  <section class=" container-fluid about-cott mt-md-4" id="bio">
+    <div class=" row">
+      <div class=" container">
+        <div class=" row row-about">
+          <div class=" col-12 ttt pt-5 mt-md-3 mt-3 text-center wow animate__fadeInDown ani-bio-t" >
+            <p>Bio</p>
+            <h3>About</h3>
+          </div>
+          <div class=" col-12 col-md-6">
+            <div class="about-left wow animate__fadeInLeft ani-bio-l">
+              <img src="image/ji-removebg-preview.png" alt="" class="about-left-img">
+            </div>
+          </div>
+          <div class=" col-12 col-md-6">
+            <div class="about-right wow animate__fadeInRight ani-bio-r">
+              <h3 class="about-right-h3">Who am i ?</h3>
+              <h5 class="about-right-h5 badge">Bio</h5>
+              <p class="about-right-p">
+                 I'm Htoo Arkar Linn. <br>
+                 I am 16 years old. <br> 
+                 Learn HTML 5 at <span class="c">Brither Myanmar free coure</span>. <br>
+                 Learn CSS 3,JAVASCRIPT,JQUERY,BOOTSTRAP 5 & SCSS at <span class="c">MMS IT</span>. <br>
+                 And then learning JAVASCRIPT & REACT at <span class="c">B.M.P.S</span>.<br>
+                 Now Learning to become a full stack devloper <br> & that is also my dream.
+              </p>
+              <div class=" d-flex about-right-ul wow animate__fadeInUp ani-bio-b">
+                <ul>
+                  <li class=" badge a-1">HTML 5</li>
+                  <li class=" badge a-2">CSS 3</li>
+                  <li class=" badge a-3">JAVASCRIPT</li><br>
+                  <li class=" badge a-4">JQUERY</li>
+                  <li class=" badge a-5">BOOTSTRAP</li>
+                  <li class=" badge a-6">SCSS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about end -->
+  <!-- skill start -->
+  <section class=" container-fluid pt-3 pt-md-0 skill-cott" id="skill">
+    <div class="row">
+      <div class=" container">
+        <div class=" row vh-100 skill-row ">
+          <div class=" col-12 pt-md-5 mt-md-3 ttt text-center wow animate__fadeInDown ani-skill-t">
+            <p>Skills</p>
+            <h3>My Noob skill are</h3>
+          </div>
+          <div class=" col-12 col-md-6 skill-img-col">
+            <div class="skill-img-div wow animate__fadeInLeft ani-skill-l">
+                <img src="image/mi-2.png" class="skill-img" alt="">
+            </div>
+          </div>
+          <div class=" col-12 col-md-6 skill-barr wow animate__fadeInRight ani-skill-r">
+            <div class="skill-bars wow">
+                <div class="bar wow">
+                  <div class="info">
+                    <span>HTML 5</span>
+                  </div>
+                  <div class="progress-line html">
+                    <span class="span-html"></span>
+                  </div>
+                </div>
+                <div class="bar wow">
+                  <div class="info">
+                    <span>CSS 3</span>
+                  </div>
+                  <div class="progress-line css">
+                    <span class="span-css"></span>
+                  </div>
+                </div>
+                <div class="bar wow">
+                  <div class="info">
+                    <span>JavasScript<span class="jq"> / jQuery</span></span>
+                  </div>
+                  <div class="progress-line jquery">
+                    <span class="span-java"></span>
+                  </div>
+                </div>
+                <div class="bar wow">
+                  <div class="info">
+                    <span>Bootstrap 5</span>
+                  </div>
+                  <div class="progress-line bs">
+                    <span class="span-bs"></span>
+                  </div>
+                </div>
+                <div class="bar wow">
+                  <div class="info">
+                    <span>UI/UX</span>
+                  </div>
+                  <div class="progress-line ps">
+                    <span class="span-ps"></span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill end -->
+  <!-- service start -->
+  <section class=" container-fluid ser-d service-cott mt-md-4" id="ser">
+    <div class="row">
+      <div class=" container service-cot vh-100">
+        <div class=" row">
+          <div class=" col-12 pt-md-3 mt-md-5 text-center ttt wow animate__fadeInDown ani-ser-t">
+            <p>Services</p>
+            <h3>What I Do ?</h3>
+          </div>
+        </div>
+        <div class="row mt-md-5">
+          <div class=" col-12 col-md-4 pt-4 ">
+            <div class=" card card-div ac wow animate__zoomIn ser-1">
+              <div class=" card-body">
+                <div class=" icon-div py-2 text-start">
+                  <i class="fas fa-palette"></i>
+                </div>
+                <h4>UI Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in saepe nisi perspiciatice</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-md-4 pt-4 ">
+            <div class=" card card-div bc wow animate__zoomIn ser-2">
+              <div class=" card-body">
+                <div class=" icon-div py-2 text-start">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in saepe nisi perspiciatice</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-md-4 pt-4 ">
+            <div class=" card card-div cc wow animate__zoomIn ser-3">
+              <div class=" card-body">
+                <div class=" icon-div py-2 text-start">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h4>UX Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in saepe nisi perspiciatice</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-md-4 pt-4 ">
+            <div class=" card card-div dc wow animate__zoomIn ser-4">
+              <div class=" card-body">
+                <div class=" icon-div py-2 text-start">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>Responsive Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in saepe nisi perspiciatice</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-md-4 pt-4 ">
+            <div class=" card card-div ec wow animate__zoomIn ser-5">
+              <div class=" card-body">
+                <div class=" icon-div py-2 text-start">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4>Web Appliction</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in saepe nisi perspiciatice</p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-md-4 pt-4 ">
+            <div class=" card card-div fc wow animate__zoomIn ser-6">
+              <div class=" card-body">
+                <div class=" icon-div py-2 text-start">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Marketing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in saepe nisi perspiciatice</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- service end -->
+ <!-- project start -->
+  <section class=" container-fluid pj-cot pj-cott mt-md-5" id="pj">
+    <div class="row">
+        <div class=" container is-cot">
+            <div class=" row">
+                <div class="col-12 menu text-center ttt wow animate__fadeInDown ani-pj-t">
+                    <div class=" pt-md-5 mt-md-4">
+                      <p>Projects</p>
+                      <h3>My Recent Projects</h3>
+                    </div>
+                    <div class="box-menu ">
+                        <ul>
+                            <li class="mixitup-control-active" data-filter="*">All</li>
+                            <li data-filter=".edu">Education</li>
+                            <li data-filter=".bus">Bussiness</li>
+                            <li data-filter=".per">Personal</li>
+                            <li data-filter=".shop">Shopping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row box-list">
+                <div class=" col-12 col-md-4 mix box-item bus">
+                    <div class=" my-3 my-md-5 mx-auto mx-md-5 ms-5 ms-md-5 wow animate__zoomIn pj-1">
+                        <img src="image/bu-1.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 mix box-item bus">
+                    <div class=" my-3 my-md-5 mx-auto mx-md-5 ms-5 ms-md-5 wow animate__zoomIn pj-2">
+                        <img src="image/bu.png" alt=""/>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 mix box-item shop">
+                    <div class=" my-3 my-md-5 mx-auto mx-md-5 ms-5 ms-md-5 wow animate__zoomIn pj-3">
+                        <img src="image/eco-1.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 mix box-item shop">
+                    <div class=" my-3 my-md-5 mx-auto mx-md-5 ms-5 ms-md-5 wow animate__zoomIn pj-4">
+                        <img src="image/eco-2.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 mix box-item edu">
+                    <div class=" my-3 my-md-5 mx-auto mx-md-5 ms-5 ms-md-5 wow animate__zoomIn pj-5">
+                        <img src="image/edu.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 mix box-item per">
+                    <div class=" my-3 my-md-5 mx-auto mx-md-5 ms-5 ms-md-5 wow animate__zoomIn pj-6">
+                        <img src="image/eco.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section> 
+ <!-- project end -->
+ <!-- contact strat -->
+ <section class=" container-fluid contact-cott" id="co">
+   <div class="row">
+     <div class=" container content-div vh-100" style="width: 80%;">
+       <div class="row align-items-start justify-content-center contact-row">
+         <div class=" col-12 ttt " style="text-align: center;">
+           <div class="wow animate__fadeInDown pt-md-3 mt-md-5 ani-cot-t">
+            <p>Contact</p>
+            <h3>Contact To Me</h3>
+           </div>
+         </div>
+         <div class=" col-12 col-md-6 ">
+           <div class="wow animate__fadeInLeft co-l">
+            <div class="">
+              <label for="e" class=" form-label">Enter Your Email</label>
+              <input type="text" name="" id="e" placeholder="Example.gmail.com" class=" form-control">
+            </div>
+            <div class="">
+              <label for="n" class=" form-label">Your Name</label>
+              <input type="text" name="" id="n" class=" form-control" placeholder="Enter Your Name">
+            </div>
+            <div class="">
+              <label for="m" class=" form-label">Enter Massage</label>
+              <textarea name="" id="m" cols="30" rows="5" class=" form-control" placeholder="Enter some massage"></textarea>
+            </div>
+            <div class=" btn-send">Send Mail</div>
+           </div>
+         </div>
+         <div class=" col-12 col-md-6">
+           <div class=" text-center cot-e wow animate__fadeInRight co-r">
+            <div class="z">
+              <i class="fas fa-envelope-open"></i>
+              <h6>usermcy47@gmail.com</h6>
+             </div>
+             <div class="zz">
+              <i class="fas fa-phone-square-alt"></i>
+              <h6>+959 793384482</h6>
+             </div>
+             <div class="zzz">
+              <i class="fas fa-map-marked-alt"></i>
+              <h6>Yangon , Insein</h6>
+             </div>
+           </div>
+          </div>
+          <div class="row">
+            <div class=" col-12">
+              <div class=" text-center footer">
+                <p>Copyright © by Htoo Arkar Linn (4rk4r)</p>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+   </div>
+ </section>
+ <!-- contact end -->
+</body>
+
+<!-- typed cdn -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- bs link -->
+<script src="bootstrap 5.1/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<!-- wow js link -->
+<script src="wow js/WOW-master/dist/wow.min.js"></script>
+
+<!-- jq link -->
+<script src="jq/jquery.js"></script>
+
+<!-- ps mix js link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<!-- waypoint linked -->
+<script src="node_modules/waypoints/lib/noframework.waypoints.js"></script>
+
+<script>
+
+// for pre loader
+$(document).ready(function(){
+  $(window).on("load",function(){
+          $('.loader-div').fadeOut(500,function(){
+            $(this).remove();
+          });
+        });
+
+        // for nav bar
+let deviceheight = $(window).height();
+      $(window).scroll(function(){
+          let curheight = $(this).scrollTop();
+          if(curheight >= deviceheight){
+          $('.navvv').addClass('nav-add');
+          }else{
+          $('.navvv').removeClass('nav-add');
+      };
+      });
+});
+
+// for typed effect
+var typed = new Typed(".auto-input", {
+    strings: ["Htoo Arkar Linn", "Frontend Dev", "UI / UX Desinger"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+})
+
+// for scroll animation
+new WOW().init();
+wow = new WOW(
+            {
+            boxClass:     'wow',      // default
+            animateClass: 'animate__animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+        )
+        wow.init();
+
+// for project bar
+$(document).ready(function(){
+        var mixer = mixitup ('.box-list');
+});
+
+// for responsive nav 
+$('.me-btn').click(function(){
+  let lee = $('.me-btn').hasClass('collapsed');
+  if(lee){
+    // $('.me-btn').removeClass('feather-x').addClass('feather-menu');
+    $('.me-btn').removeClass('feather-x').addClass('feather-menu');
+  }else{
+    // $('.me-btn').removeClass('feather-menu').addClass('feather-x');
+    $('.me-btn').removeClass('feather-menu').addClass('feather-x');
+  }
+})
+
+</script>
+
+</html>
