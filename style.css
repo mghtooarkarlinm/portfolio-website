@@ -790,7 +790,7 @@ body{
     color: #9b72fb;
     font-weight: bold;
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 480px){
     /* nav */
     .nav-title{
         margin-left: 25px;
